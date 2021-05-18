@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="container border border-danger">
+    <h1>Products API CLient</h1>
+    <div id="BTN">
+    <button
+    type="button"
+    id="BUTN"
+    class="btn btn-primary btn-md"
+    data-toggle="modal"
+    data-target="#ADD"
+    >
+    Add Product
+    </button>
+</div>
+
+    <div id="PRODUCTS">loading...</div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ADD"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add New Product</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label for="NAME">NAME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  NAME="name"
+                  id="NAME"
+                  aria-describedby="HELP"
+                  placeholder="NAME of the Product"
+                />
+                <small id="HELP" class="form-text text-muted"
+                  >Enter NAME of the Product</small
+                >
+            <div class="form-group">
+              <label for="TO PAY">TO PAY</label>
+              <input
+                type="text"
+                class="form-control"
+                NAME="price"
+                id="TO PAY"
+                aria-describedby="priceHelp"
+                placeholder="TO PAY of the Product"
+              />
+              <small id="priceHelp" class="form-text text-muted"
+                >Enter TO PAY of the Product</small
+              >
+              <div class="form-group">
+                <label for="COLOR">Color</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  NAME="color"
+                  id="CLR"
+                  aria-describedby="cHELP"
+                  placeholder="Color of the Product"
+                />
+                <small id="cHELP" class="form-text text-muted"
+                  >Enter Color of the Product</small
+                >
+                <div class="form-group">
+                    <label for="DEPARTMENT">Department</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      NAME="department"
+                      id="DPT"
+                      aria-describedby="dHELP"
+                      placeholder="Department of the Product"
+                    />
+                    <small id="dHELP" class="form-text text-muted"
+                      >Enter Department of the Product</small
+                    >
+            </div>
+            <div class="form-group">
+              <label for="DESCRIPTION">Description</label>
+              <input
+                type="text"
+                class="form-control"
+                NAME="description"
+                id="DCP"
+                aria-describedby="dsHELP"
+                placeholder="Description of Product"
+              />
+              <small id="dsHELP" class="form-text text-muted"
+                >Enter Description</small
+              >
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="addBTN" class="btn btn-info">Add Product</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.product {
+    border-bottom: 4px solid rgb(38, 0, 255);
+    margin-bottom: 15px;
+  }
+  .product p {
+    padding: 3px;
+  }
+.container {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  #BUTN {
+    margin-bottom: 15px;
+  }
+  #BTN {
+    border-bottom: 4px solid rgb(38, 0, 255);
+    margin-bottom: 15px;
+  }
+
+  
