@@ -1,7 +1,7 @@
 $(function () {
     loadproducts();
-    $("#products").on("click", ".btn-danger", handledelete);
-    $("#addBtn").click(addproduct);
+    $("#PRODUCTS").on("click", ".btn-danger", handledelete);
+    $("#addBTN").click(addproduct);
   });
   function addproduct() {
     var name = $("#NAME").val();
